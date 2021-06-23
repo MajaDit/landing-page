@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The F Word</title>
+    <style>
+    body {background: linear-gradient(45deg, #9198e5, #e66465);}
+    
+    .container{font-family: 'Courier New', Courier, monospace;
+        }
+    img.logo{max-width: 12%;
+            display: block;
+            margin: 0 auto;
+            }
+    h1{text-align: center;
+        font-size: 40px;
+        margin: 10px;
+        }
+    h2{text-align: center;
+        border: 2px solid rgb(1, 57, 102);
+        border-radius: 3px;
+        padding: 15px 20px;
+        margin: 20px 250px;
+       }
+    img.poster{display: block;
+                margin: 0 auto;
+                max-width: 50%;
+                border-radius: 1%;}
+    p.description {line-height: 1.5;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin: 30px 80px;
+                text-align: justify;}
+
+    span {color:#013966}
+    hr {background-color:#e66465;
+        border-color: #013966;
+        height: 0.5px;}
+    button {
+        display: block;
+        margin: 30px auto;
+        padding: 10px 10px;
+        background: #013966;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: 1px solid  #013966;
+        border-radius: 30px;
+        color: white;
+        box-shadow: 3px 3px 8px black;
+        transition: all 100ms ease-in-out;
+    }
+    button:hover {cursor: pointer;
+                background: linear-gradient(45deg, #9198e5, #e66465);
+                color: #013966}
+
+    a {
+        text-decoration: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #013966;
+        margin: 30px 80px;
+        line-height: 1.5;
+    }
+    a:hover {text-decoration: underline;}
+    p.credit {
+        text-align: center;
+        margin: 30px;
+    }
+    hr {margin-top: 20px;}
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+    <img class="logo" src = "https://scontent-lcy1-1.xx.fbcdn.net/v/t31.18172-8/17218347_223088528160582_3010176354752732153_o.jpg?_nc_cat=108&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=xnjUS0loznIAX8Bq0mN&_nc_ht=scontent-lcy1-1.xx&oh=6bb1ed539a530637a0147d9b4b559bec&oe=60F60870"/>
+    
+    <h1>
+     The F Word 
+    </h1>
+    <h2>
+        Gigs for All, Made by Women. 
+        <br/>
+        Promoting gender equality in the music industry!
+    </h2>
+
+    <img class="poster" src = "https://scontent-lcy1-1.xx.fbcdn.net/v/t1.6435-9/28783656_362189414250492_6292962945110376448_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=730e14&_nc_ohc=Ma-9mJu1790AX81Etqg&tn=YJ2v61AJbPQboPOc&_nc_ht=scontent-lcy1-1.xx&oh=3ed7cbca4ea09472076e98b3eaf84981&oe=60D5A506"/> 
+    <p class="description">
+<strong><em>The F Word</strong> was designed to address gender inequalilty in music by 'providing a platform for female artists and practitioners to showcase their work and ability'. We have organised several events, some of which being <span>concerts run entirely by women</span> (from the line-up to the technicians and security) and holding a <span>music industry forum and networking event featuring an all-female panel</span>. Our events have been a great success and brought cosiderable attention to these issues.</em>
+    </p>
+
+    <a href = "http://www.falmouth-anchor.co.uk/2017/03/30/the-f-word-a-gig-for-all/" target ="_blank"> Read a review of one of our gigs</a>
+</br>
+    <a  href ="https://www.facebook.com/TheFWord24" target="_blank">Find us on Facebook</a>
+<hr/>
+    <button class="contact">
+        Get in touch!
+    </button>
+<p class="credit">
+    <strong>Created by Maja Ditrtova</strong>
+</p>
+    </div>
+<script>
+function getInTouch()
+{let name = prompt ("What's your name?");
+let fb = prompt ("Do you 'like' us on Facebook?");
+
+if (fb === "yes") {alert (`Hi ${name}! Please drop us a message via our Facebook page 😉`)}
+else {alert (`Hi ${name}! Please drop us a message on Fb and consider liking our page 😉 or email us at usthefworl@gmail.com 😊`)}
+} 
+
+let contactButton = document.querySelector("button");
+contactButton.addEventListener("click", getInTouch)
+</script>
+</body>
+</html>
