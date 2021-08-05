@@ -1,14 +1,19 @@
-body {
-  background: linear-gradient(45deg, #9198e5, #e66465);
-}
-
 .container {
-  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(45deg, #9198e5, #e66465);
+  max-width: 700px;
+  border-radius: 4px;
+}
+div.logo {
+  padding-top: 30px;
 }
 img.logo {
-  max-width: 12%;
+  max-width: 100px;
+  border-radius: 4px;
   display: block;
   margin: 0 auto;
+}
+img.poster {
+  border-radius: 4px;
 }
 h1 {
   text-align: center;
@@ -19,8 +24,10 @@ h2 {
   text-align: center;
   border: 2px solid rgb(1, 57, 102);
   border-radius: 3px;
-  padding: 15px 20px;
-  margin: 20px 250px;
+  font-size: 20px;
+  padding: 10px 0;
+  max-width: 80%;
+  margin: 0 auto 20px auto;
 }
 img.poster {
   display: block;
@@ -30,10 +37,8 @@ img.poster {
 }
 p.description {
   line-height: 1.5;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 30px 80px;
   text-align: justify;
+  padding: 20px 40px;
 }
 
 span {
@@ -63,29 +68,23 @@ button:hover {
   background: linear-gradient(45deg, #9198e5, #e66465);
   color: #013966;
 }
-
 a {
   text-decoration: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #013966;
-  margin: 30px 80px;
   line-height: 1.5;
+  padding-left: 40px;
+  font-size: 15px;
 }
 a:hover {
   text-decoration: underline;
 }
 p.credit {
   text-align: center;
-  margin: 30px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 hr {
   margin-top: 20px;
-}
-
-img.logo {
-  max-width: 100px;
-}
-img.poster {
-  border-radius: 4px;
 }
